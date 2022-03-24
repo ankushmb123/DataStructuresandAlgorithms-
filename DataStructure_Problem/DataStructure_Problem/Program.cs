@@ -11,14 +11,11 @@ namespace DataStructure_Problem
         static void Main(string[] args)
         {
             Console.WriteLine("Data Structure Problems");
-            Console.WriteLine("Press 5 for Permutation Problem");
+            Console.WriteLine("Press 6 for Primenumber Problem");
             int option = Convert.ToInt32(Console.ReadLine());
 
-            Permutation permutation = new Permutation();
-            String str = "Ankush";
-            int Outputs = str.Length;
-            Permutation.Permute(str, 0, Outputs - 1);
-            Console.ReadKey();
+            Primenumber pnum = new Primenumber();
+            pnum.Prime();
         }
     }
 }
