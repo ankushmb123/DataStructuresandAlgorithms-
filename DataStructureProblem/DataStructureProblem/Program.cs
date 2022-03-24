@@ -9,12 +9,14 @@ namespace DataStructureProblem
          bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Program number to get executed \n1.Binary search \n2. Insertion sort \n3.Bubble sort \n4. Anagram Detection  \n5. Exit");
+                Console.WriteLine("Enter Program number to get executed \n5.Permutation");
                 int option = Convert.ToInt32(Console.ReadLine());
-
-                //Anagram  
-                Anagramdetection anagram = new Anagramdetection();
-                anagram.Check();
+                
+                //Permutation
+                Permutation permutation = new Permutation();
+                String str = "Ankush";
+                int Outputs = str.Length;
+                Permutation.Permute(str, 0, Outputs - 1);
                 Console.ReadKey();
             }
       }
