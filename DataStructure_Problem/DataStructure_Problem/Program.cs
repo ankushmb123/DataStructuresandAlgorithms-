@@ -11,11 +11,12 @@ namespace DataStructure_Problem
         static void Main(string[] args)
         {
             Console.WriteLine("Data Structure Problems");
-            Console.WriteLine("Press 6 for Primenumber Problem");
+            Console.WriteLine("Press 7 for Primenumber_palendrome Problem");
             int option = Convert.ToInt32(Console.ReadLine());
 
-            Primenumber pnum = new Primenumber();
-            pnum.Prime();
+            Primenumber primeNumbers = new Primenumber();
+            primeNumbers.PrimeNum();
+            Console.ReadKey();
         }
     }
 }
